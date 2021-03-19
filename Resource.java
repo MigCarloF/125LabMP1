@@ -41,8 +41,8 @@ public class Resource {
         return !requests.isEmpty();
     }
 
-    public void addRequest(Request request){
-       requests.add(request);
+    public void addRequest(Request request){                    // Rejects user if user requests for the same resource more than once
+        requests.add(request);
     }
 
     public int getResNum(){

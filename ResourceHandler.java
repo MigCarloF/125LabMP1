@@ -112,8 +112,8 @@ public class ResourceHandler {
         maxJobs = 5;
         maxTime = 30;
 
-        numUsers = GeneralFunctions.generate(1, maxUsers);                             // Create randomly generated users
-        numRes = GeneralFunctions.generate(1, maxResources);                          // Create randomly generated resources
+        numUsers = 3; //GeneralFunctions.generate(1, maxUsers);                             // Create randomly generated users
+        numRes = 3; //GeneralFunctions.generate(1, maxResources);                          // Create randomly generated resources
 
         for(int i = 0; i < numUsers; i++){                                      
             users.add(new User(i + 1));

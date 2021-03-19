@@ -16,7 +16,16 @@ public class User {
     }
 
     public void addRequest(Request request){
-        requests.add(request);
+        boolean multipleRequest = false;
+        for(Request requestCheck : requests){
+            if(request.resourceNum == requestCheck.resourceNum){
+                multipleRequest = true;
+                break;
+            }
+        }
+        if(!multipleRequest){
+            requests.add(request);
+        }
     }
 
     public Queue<Request> getResourceRequests(){

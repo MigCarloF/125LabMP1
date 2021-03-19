@@ -15,6 +15,10 @@ public class User {
         return busy;
     }
 
+    /**
+     * Checks for duplicate resource in request and does not add it to request list if so
+     * @param request
+     */
     public void addRequest(Request request){
         boolean multipleRequest = false;
         for(Request requestCheck : requests){
